@@ -1,0 +1,83 @@
+</html>
+<head>
+  <title>Images Gallery</title>
+<link a href="Css/images.css" type="text/css" rel="stylesheet">
+<h1>Gallery</h1>
+<p><h2>Click the buttons to change grid type</p></h3>
+  <button class="button">1</button>
+  <button class="button>">2</button>
+  <button class="button">4</button>
+<div class="row">
+<div class="column">
+  <img src="Images/1702079_0.jpg">
+  <img src="Images/Adobe-Spark.jpg">
+  <img src="Images/footsteps+to+freedom+information.jpg">
+  <img src="Images/freedom-1-638.jpg">
+  <img src="Images/prayer.jpg">
+  <img src="Images/prayer 2.jpg">
+  <img src="Images/one_tree_hill-wallpaper-1280x1024.jpg">
+</div>
+<div class="column">
+  <img src="Images/one_tree_hill-wallpaper-1280x1024.jpg">
+  <img src="Images/prayer 2.jpg">
+  <img src="Images/footsteps+to+freedom+information.jpg">
+  <img src="Images/mountainskies.jpg">
+  <img src="Images/1702079_0.jpg">
+  <img src="Images/Adobe-Spark.jpg">
+</div>
+<div class="column">
+  <img src="Images/Adobe-Spark.jpg">
+  <img src="Images/DANIEL AND HANNAH FAMILY SERVICE is duly registered.jpg">
+  <img src="Images/depression.jpg">
+  <img src="Images/finger-on-computer-keyboard.jpg">
+  <img src="Images/prayer.jpg">
+  <img src="Images/prayer 2.jpg">
+  <img src="Images/chicago_skyline_night-wallpaper-1280x1024.jpg">
+</div>
+<div class="column">
+  <img src="Images/depression.jpg">
+  <img src="Images/finger-on-computer-keyboard.jpg">
+  <img src="Images/chicago_skyline_night-wallpaper-1280x1024.jpg">
+  <img src="Images/one_tree_hill-wallpaper-1280x1024.jpg">
+  <img src="Images/beach_sunrise-wallpaper-1280x1024 - Copy.jpg">
+  <img src="Images/1702079_0.jpg">
+</div>
+</div>
+
+<script language="javacript" type="text/javascript">
+<button onclick="one()">1</button>
+<button onclick="two()">2</button>
+<button onclick="four()">4</button>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Get the elements with class="button"
+var elements = document.getElementsByClassName("button");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.flex = "100%";
+    }
+}
+
+// Two images side by side
+function two() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.flex = "50%";
+    }
+}
+
+// Four images side by side
+function four() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.flex = "25%";
+    }
+}
+</script>
+</html>
